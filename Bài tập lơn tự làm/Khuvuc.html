@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Bungee&family=Caveat&family=Fredericka+the+Great&family=Lobster&family=Pacifico&family=Press+Start+2P&family=Shadows+Into+Light&family=Special+Elite&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <title>Web tìm trọ</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container">
+                <div><a href="/Bài tập lơn tự làm/Trang chủ.html" id="logo">tro tot</a></div>
+                <nav>
+                    <ul id="main-menu" class="menu">
+                        <li><a href="/Bài tập lơn tự làm/Trang chủ.html">TRANG CHỦ</a></li>
+                        <li><a href="">KHU VỰC</a></li>
+                        <li><a href="">TIN TỨC</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="#" class="login-btn" onclick="openModal('loginModal')">Đăng Nhập</a>
+                    <a href="#" class="register-btn" onclick="openModal('registerModal')">Đăng Ký</a>
+                </div>    
+            </div>
+        </header>
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+                <h2>Đăng Nhập</h2>
+                <form>
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <label for="loginPassword">Mật Khẩu:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Đăng Nhập</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Register Modal -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('registerModal')">&times;</span>
+                <h2>Đăng Ký</h2>
+                <form>
+                    <label for="registerName">Tên:</label>
+                    <input type="text" id="registerName" name="name" required>
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                    <label for="registerPassword">Mật Khẩu:</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                    <button type="submit">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="gg-map">
+        <img src="https://statics.vinpearl.com/ban-do-ha-noi-11_1685938324.jpg" alt="">
+    </div>
+    <div style="display: flex;">
+        <div class="vitri">
+            <li><a href="">Ba Đình</a></li>
+            <li><a href="">Cầu Giấy</a></li>
+            <li><a href="">Hoàn Kiếm</a></li>
+            <li><a href="">Hai Bà Trưng</a></li>
+            <li><a href="">Hoàng Mai</a></li>
+            <li><a href="">Đống Đa</a></li>
+            <li><a href="">Tây Hồ</a></li>
+            <li><a href="">Thanh Xuân</a></li>
+            <li><a href="">Bắc Từ Liêm</a></li>
+            <li><a href="">Hà Đông</a></li>
+            <li><a href="">Long Biên</a></li>
+            <li><a href="">Nam Từ Liêm</a></li>
+        </div>
+        <div class="sanpham">
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="scrips.js"></script>
+    
+</body>
+</html>
