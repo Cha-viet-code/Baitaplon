@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Bungee&family=Caveat&family=Fredericka+the+Great&family=Lobster&family=Pacifico&family=Press+Start+2P&family=Shadows+Into+Light&family=Special+Elite&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web tìm trọ</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container">
+                <div><a href="/Bài tập lơn tự làm/Trang chủ.html" id="logo">tro tot</a></div>
+                <nav>
+                    <ul id="main-menu" class="menu">
+                        <li><a href="/Bài tập lơn tự làm/Trang chủ.html">TRANG CHỦ</a></li>
+                        <li><a href="/Bài tập lơn tự làm/Khuvuc.html">KHU VỰC</a></li>
+                        <li><a href="">TIN TỨC</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="#" class="login-btn" onclick="openModal('loginModal')">Đăng Nhập</a>
+                    <a href="#" class="register-btn" onclick="openModal('registerModal')">Đăng Ký</a>
+                </div>    
+            </div>
+        </header>
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+                <h2>Đăng Nhập</h2>
+                <form>
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <label for="loginPassword">Mật Khẩu:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Đăng Nhập</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Register Modal -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('registerModal')">&times;</span>
+                <h2>Đăng Ký</h2>
+                <form>
+                    <label for="registerName">Tên:</label>
+                    <input type="text" id="registerName" name="name" required>
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                    <label for="registerPassword">Mật Khẩu:</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                    <button type="submit">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="slider" >
+            <div class="list">
+                <div class="item">
+                    <img src="https://static-images.vnncdn.net/files/publish/2023/7/20/chung-cu-801.jpg " alt="">
+                </div>
+                <div class="item">
+                    <img src="https://donggia.vn/wp-content/uploads/2019/11/thiet-ke-noi-that-phong-khach-chung-cu-dep-2020-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://5soffice.com.vn/FileUpload/Images/phong_lam_viec_van_phong_tron_goi_cau_giay_soffice.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://img.homedy.com/store/images/2024/06/07/hkt4938-638533472254213907.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://tiki.vn/blog/wp-content/uploads/2023/10/trang-tri-phong-tro.jpg" alt="">
+                </div>
+            </div>
+            <!--chuyen slide-->
+            <div class="buttons">
+                <button id="prev"> < </button>
+                <button id="next"> > </button>
+            </div>
+            <!--dau cham chuyen slide-->
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+        <div id="content" class="container">
+            <h1>aaaaaaaaaaaaaaaa</h1>
+            <p>Đây là thành phố có nhiều đơn vị hành chính cấp huyện nhất hiện nay, đồng thời là thành phố trực thuộc trung ương duy nhất của Việt Nam có thị xã.
+
+                Hà Nội là thủ đô của nước Việt Nam Dân Chủ Cộng Hòa, đồng thời được biết đến là một trong hai đô thị loại đặc biệt của nước ta. Đây cũng là thành phố có diện tích lớn nhất Việt Nam, được xem là trung tâm chính trị, kinh tế, văn hóa và giáo dục quan trọng hàng đầu của cả nước. 
+                
+                Xét về vị trí địa lý, Hà Nội nằm về phía Tây Bắc của trung tâm vùng đồng bằng sông Hồng, trải dài từ 20°34′ đến 21°18′ vĩ độ Bắc và từ 105°17′ đến 106°02′ kinh độ Đông. Địa giới hành chính Hà Nội trên bản đồ như sau:
+                
+                Phía Bắc giáp các tỉnh Thái Nguyên, Vĩnh Phúc.
+                Phía Nam giáp các tỉnh Hà Nam, Hòa Bình.
+                Phía Đông giáp các tỉnh Bắc Giang, Bắc Ninh và Hưng Yên.
+                Phía Tây giáp các tỉnh Hòa Bình và Phú Thọ.
+                Với diện tích 3.359,82 km2, Hà Nội là thành phố trực thuộc trung ương có diện tích lớn nhất Việt Nam. Ngoài ra, Hà Nội cũng được biết đến là thành phố đông dân thứ hai với tổng dân số 8,4 triệu người (tính đến năm 2022). 
+                Ngày 29/05/2008, Quốc hội Việt Nam đã chính thức thông qua Nghị quyết số 15/2008/QH12 về việc điều chỉnh địa giới hành chính Hà Nội và các tỉnh (có hiệu lực từ ngày 01/08/2008). Theo nghị quyết này, toàn bộ tỉnh Hà Tây, huyện Mê Linh của tỉnh Vĩnh Phúc và 4 xã thuộc huyện Lương Sơn, tỉnh Hòa Bình được sáp nhập về thành phố Hà Nội. Theo đó, diện tích thành phố từ gần 1000 km2 đã tăng lên thành 3.324,92km2, dân số cũng có sự thay đổi từ 3,4 triệu người lên 6,23 triệu người.
+
+                Ngày 8/5/2009, địa giới hành chính TP. Hà Nội tiếp tục có những điều chỉnh như sau:
+                
+                Xã Đông Xuân, huyện Lương Sơn, tỉnh Hòa Bình được chuyển về huyện Quốc Oai, Hà Nội. 
+                3 xã Tiến Xuân, Yên Bình, Yên Trung thuộc huyện Lương Sơn, tỉnh Hòa Bình được chuyển về huyện Thạch Thất, Hà Nội.
+                Thành lập quận Hà Đông từ thành phố Hà Đông trước đây, các phường của quận cũng được thành lập trên cơ sở toàn bộ các xã có tên tương ứng. 
+                Thành phố Sơn Tây được chuyển thành thị xã Sơn Tây.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="scrips.js"></script>
+    
+</body>
+</html>
